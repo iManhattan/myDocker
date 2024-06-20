@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  my-python-service:
+    build:
+      context: \\wsl.localhost\docker-desktop\tmp\python
+      dockerfile: Dockerfile
+    volumes:
+      - /codesys/NextoUser/Files/docker/var-lib/:/app
+    container_name: mypythoncontainer
